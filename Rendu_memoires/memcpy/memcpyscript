@@ -1,0 +1,6 @@
+
+taskset -c 3 ./memcpy $(( 30 * 2**10 /2)) 1000 
+taskset -c 3 ./memcpy $(( 200 * 2**10 /2)) 1000
+taskset -c 3 ./memcpy $(( 2980 * 2**10 /2)) 1000 
+taskset -c 3 ./memcpy $(( 3400 * 2**10 /2)) 1000
+

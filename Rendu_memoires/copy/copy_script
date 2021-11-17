@@ -1,0 +1,12 @@
+
+
+taskset -c 3 ./copy_SSE_AVX $(( 30 * 2**10 /2)) 1000 | cut -d';' -f1,9 > copy_L1.dat  
+
+
+taskset -c 3 ./copy_SSE_AVX $(( 220 * 2**10 /2)) 1000| cut -d';' -f1,9 > copy_L2.dat
+
+
+taskset -c 3 ./copy_SSE_AVX $(( 2980 * 2**10 /2)) 1000 | cut -d';' -f1,9 > copy_L3.dat
+
+
+taskset -c 3 ./copy_SSE_AVX $(( 3400 * 2**10 /2)) 1000| cut -d';' -f1,9 > cpoy_DRAM.dat

@@ -1,0 +1,12 @@
+
+
+taskset -c 3 ./pc $(( 30 * 2**10 )) 1000 | cut -d';' -f1,9 > pc_L1.dat  
+
+
+taskset -c 3 ./pc $(( 220 * 2**10 )) 1000| cut -d';' -f1,9 > pc_L2.dat
+
+
+taskset -c 3 ./pc $(( 2980 * 2**10 )) 1000 | cut -d';' -f1,9 > pc_L3.dat
+
+
+taskset -c 3 ./pc $(( 3400 * 2**10 )) 1000| cut -d';' -f1,9 > pc_DRAM.dat

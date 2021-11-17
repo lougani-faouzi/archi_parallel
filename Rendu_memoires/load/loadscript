@@ -1,0 +1,6 @@
+
+taskset -c 3 ./load_SSE_AVX $(( 30 * 2**10 )) 1000 
+taskset -c 3 ./load_SSE_AVX $(( 200 * 2**10 )) 1000
+taskset -c 3 ./load_SSE_AVX $(( 2980 * 2**10 )) 1000 
+taskset -c 3 ./load_SSE_AVX $(( 3400 * 2**10 )) 1000
+
